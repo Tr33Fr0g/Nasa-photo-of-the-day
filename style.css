@@ -33,3 +33,97 @@ h1 {
     justify-content: center;
     margin-bottom:2rem;
 }
+
+#date-picker {
+    background-color: #1a1d2e;
+    color: #ffffff;
+    border: 1px solid #3a3f5c;
+    padding: 0.6rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#date-picker:focus { /* Coolest thing ive made so far ooh its a shiny button focus thingy*/
+    outline: none;
+    border-color: #5764c5;
+    box-shadow: 0 0 8px rgba(108, 122, 224, 0.3);
+}
+
+.media-container {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.media-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.media-container iframe { 
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: none;
+    border-radius: 12px;
+}
+
+.loading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #777797;
+    display: none;
+}
+
+.error {
+    text-align: center;
+    color: #f06666;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    display:none;
+}
+
+.content {
+    display: none;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color:#ffffff;
+    text-align: center;
+}
+
+.date-display {
+    text-align: center;
+    color: #777797;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.explanation {
+    font-size: 1rem;
+    color: #cccccc;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.copyright {
+    font-size: 0.85rem;
+    color:#666688;
+    text-align: center;
+    font-style: italic;
+}
+
+
+@media (max-width: 600px) {
+    .conmtainer {
+        padding: 1rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .media-container iframe {
+        height: 250px;
+    }
+}
