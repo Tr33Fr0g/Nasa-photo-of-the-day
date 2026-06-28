@@ -44,8 +44,10 @@ async function fetchAPOD(date) {
         const response = await fetch(url);
 
         if (!response.ok) {
-            throw new Error(`API error: ${response.status}`)
-
+            if (response.status === 503) {
+                throw new Error("NASA has not published the APOD for this date yet. Try again later.");
+            }
+            throw new Error("Failed to load the astronomy photo. Please try again.");
         }
         const data = await response.json();
         //Update the page using the returned data
