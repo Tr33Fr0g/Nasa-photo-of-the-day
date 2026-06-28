@@ -40,14 +40,25 @@ h1 {
     border: 1px solid #3a3f5c;
     padding: 0.6rem 1rem;
     border-radius: 1rem;
+    font-size: 1rem;
     cursor: pointer;
+    /*this bit makes the light up effect fade in and out. */
+    transition: all 0.3s ease-in-out;
 }
 
 #date-picker:focus { /* Coolest thing ive made so far ooh its a shiny button focus thingy*/
     outline: none;
     border-color: #5764c5;
+    background-color: #1673ca;
     box-shadow: 0 0 8px rgba(108, 122, 224, 0.3);
 }
+
+#date-picker:active {
+    border-color: #bb1f6d;
+    box-shadow: 0 0 25px rgba(202, 18, 110, 0.9);
+    transform: scale(0.98);
+}
+
 
 .media-container {
     text-align: center;
