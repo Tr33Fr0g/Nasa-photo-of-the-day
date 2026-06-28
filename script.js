@@ -10,7 +10,7 @@ const copyrightEl = document.getElementById('copyright');
 
 // NASA APOD API endpoint and demo key
 const API_URL = 'https://api.nasa.gov/planetary/apod';
-const API_KEY = 'DEMO_KEY';
+const API_KEY = 'XpCUQsbO9zc00OFbRK6dR8oJ7O5oKqukWfd3HMoQ';
 
 
 
@@ -79,7 +79,7 @@ async function fetchAPOD(date) {
             //always re-enable the date picker
             datePicker.disabled = false;
         }
-    }
+}
 
 datePicker.addEventListener('change', function () {
     fetchAPOD(this.value);
