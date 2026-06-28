@@ -80,6 +80,10 @@ async function fetchAPOD(date) {
             datePicker.disabled = false;
         }
     }
+
+datePicker.addEventListener('change', function () {
+    fetchAPOD(this.value);
+});
 //setup the date picker and todays photo
 setupDatePicker();
 fetchAPOD();
