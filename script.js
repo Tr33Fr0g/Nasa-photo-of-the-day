@@ -36,7 +36,7 @@ async function fetchAPOD(date) {
 
     try {
         //builds the api url using the key and optional date
-        let url = `API_URL`;
+        let url = API_URL;
         if (date) {
             url += `&date=${date}`;
         }
