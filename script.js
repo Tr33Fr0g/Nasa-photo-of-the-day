@@ -9,8 +9,7 @@ const explanationEl = document.getElementById('explanation');
 const copyrightEl = document.getElementById('copyright');
 
 // NASA APOD API endpoint and demo key
-const API_URL = 'https://api.nasa.gov/planetary/apod';
-const API_KEY = 'XpCUQsbO9zc00OFbRK6dR8oJ7O5oKqukWfd3HMoQ';
+const API_URL = '/api/apod';
 
 
 
@@ -37,7 +36,7 @@ async function fetchAPOD(date) {
 
     try {
         //builds the api url using the key and optional date
-        let url = `${API_URL}?api_key=${API_KEY}`;
+        let url = `API_URL`;
         if (date) {
             url += `&date=${date}`;
         }
