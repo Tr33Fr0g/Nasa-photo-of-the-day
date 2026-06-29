@@ -64,7 +64,7 @@ async function fetchAPOD(date) {
 
         // Handles the video vs image media types
         if (data.media_type === 'video') {
-            mediaContainer.innerHTML = `<iframe src="${data.url}" allowfullScreen></iframe>`;
+            mediaContainer.innerHTML = `<a href="${data.url}" target="_blank">Watch Video on Nasa</a>`;
             }    else {
                 mediaContainer.innerHTML = `<img src="${data.url}" alt="${data.title}">`;
             }
